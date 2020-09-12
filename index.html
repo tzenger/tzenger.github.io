@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Color Match Online</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container" id="menu">
+    <div class="container">
+        <div class="header">
+            <h1>Color Match Online</h1>
+            <p>An Online Color Match Replica</p>
+        </div>
+        </div>
+    
+        <div class="container">
+            <div class="startGame">
+                <button onclick="startGame()">Start Game</button>
+            </div>
+            </div>
+</div>
+
+<div class="container" id="game">
+    <div class="pf" id="pf">
+        <div id="pfCntr">
+            <p id="pfText"></p>
+        </div>
+        <div id="circleCorrect"></div>
+        <div id="circle"></div>
+        </div>
+        <p id="roundNumber"></p>
+        <p id="totalScore"></p>
+        <p id="roundScore"></p>
+        <button onclick="runRound()" id="nextRoundButton">Next Round</button>
+        <button onclick="showResults()" id="resultsButton">See Your Results</button>
+</div>
+
+<div class="container" id="results">
+    <div id="score">
+        <h1 id="resultScore"></h1>
+        <button onclick="startGame()" id="playAgain">Play Again?</button>
+    </div>
+        
+</div>
+
+
+<div id="footer">
+    <a href="https://github.com/tzenger/ColorMatchOnline" target="_blank">Click here to view the documentation of this project!</a>
+</div>
+
+        <script src="backend.js"></script>
+</body>
+</html>
